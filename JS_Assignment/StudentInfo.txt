@@ -1,0 +1,26 @@
+
+//usage
+var stud = StudentInfo("Aniket","soni","11")
+console.log(stud.fullName())
+
+
+
+function StudentInfo(firstName, lastName, UserClass){
+      // student object
+      var student={
+       firstName,
+       lastName,
+       UserClass,
+       fullName : function() {
+       return this.firstName + " " + this.lastName;
+    }
+ 
+    
+  }
+ return (student);
+     
+}
+
+
+
+

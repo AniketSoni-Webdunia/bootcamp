@@ -1,0 +1,8 @@
+//usage
+console.log(CalculateSimpleIntrest(1000,7.8,1));
+
+
+function CalculateSimpleIntrest(P,R,T) {
+  //P principal amount(Rs) R rate(%) , T Time(yrs)
+	return((P*R*T)/100)
+}
