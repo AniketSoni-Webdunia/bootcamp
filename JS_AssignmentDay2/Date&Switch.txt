@@ -1,0 +1,48 @@
+function GetMonthString(m){
+var a;
+switch(m) {
+  case 1: a="Jan"  
+    break;
+    case 2: a="Feb"  
+    break;
+    case 3: a="Mar"  
+    break;
+    case 4: a="Apr"  
+    break;
+    case 5: a="May"  
+    break;
+    case 6: a="Jun"  
+    break;
+    case 7: a="Jul"  
+    break;
+    case 8: a="Aug"  
+    break;
+    case 9: a="Sep"  
+    break;
+    case 10: a="Oct"  
+    break;
+    case 11: a="Nov"  
+    break;
+    case 12: a="Dec"  
+    break;
+    default:alert("Something Went Wrong");
+  
+}
+return(a);
+}
+
+//usage for 1 for Jan , 2 for 
+alert("Passes:2 Expected:Feb Answer:"+GetMonthString(2));
+//2 Current Month
+var d = new Date(2019,10,9);
+//d.getMonth will give 0 for jan , 1 for Feb and So on..
+var cm =d.getMonth()
+console.log(cm);
+alert("Date 9/10/2019 as dd/mm/yyyy format Answer: "+GetMonthString(cm));
+
+
+//jsFiddle link : https://jsfiddle.net/p0segu1t/
+
+
+
+
