@@ -1,0 +1,11 @@
+function getCompoundIntrest(P,R,N,T){
+var temp = R/(N*100);
+var temp2 =Math.pow((1+temp),N*T);
+var Amount = P*temp2;
+return Amount;
+}
+//usage
+alert(getCompoundIntrest(1000,4,3,3))
+
+
+// JSfiddle link : https://jsfiddle.net/s8Lh362c/
