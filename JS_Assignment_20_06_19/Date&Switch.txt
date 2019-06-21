@@ -31,11 +31,11 @@ switch(m) {
 return(a);
 }
 
-//usage for 1 for Jan , 2 for 
+//usage for 1 for Jan , 2 for Feb 
 alert("Passes:2 Expected:Feb Answer:"+GetMonthString(2));
-//2 Current Month
+//2  Month from date object
 var d = new Date(2019,10,9);
-//d.getMonth will give 0 for jan , 1 for Feb and So on..
+
 var cm =d.getMonth()
 console.log(cm);
 alert("Date 9/10/2019 as dd/mm/yyyy format Answer: "+GetMonthString(cm));
