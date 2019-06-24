@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="Weblayout.css">
+</head>
+
+<body>
+
+
+
+
+
+
+    <header>
+        <span id="logo">
+            <img src="http://www.webdunia.net/Portals/0/Images/wd_logo.png?ver=2015-11-25-143621-190" width="200"
+                height="50">
+        </span>
+
+        <span>
+            <ul class="navi">
+
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#carrer">Carrer</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+
+        </span>
+
+    </header>
+
+
+
+    <!-- <span id="Heading">Figma to React Api</span> -->
+    <!-- <span class="hbut">
+            <button>Download</button>
+        </span>
+        <span class="hbut">
+                <button>Login/Register</button>
+        </span> -->
+
+
+    <section id=content>
+        <section id="about" class="Page">
+            <h1>About Us</h1>
+            <div id="displayContent">
+            <p>Webdunia, is a CMMI Level 3, localization and software solutions provider to businesses across the world. With over 19 years in the industry, we deliver industry-led localization, translation, multilingual content management, and software solutions and services to address specific needs of particular business requirements. We have a proven delivery record of offering high quality solutions to help our clients excel globally on any technology platform.</p>
+        </div>
+        </section>
+        <section id="gallery" class="Page">
+            <h1>Gallery</h1>
+            <div id="galleryC">
+                <div class="polaroid">
+                    <img src="http://www.webdunia.net/Attachments/QYJG-25.jpg" alt="Norway" style="width:100%">
+                    <div class="container">
+                        <p>Business Meets</p>
+                    </div>
+                </div>
+
+                <div class="polaroid">
+                    <img src="http://www.webdunia.net/Attachments/AREV-05.jpg" alt="Norway" style="width:100%">
+                    <div class="container">
+                        <p>Our Infrastructure</p>
+                    </div>
+                </div>
+
+                <div class="polaroid">
+                    <img src="http://www.webdunia.net/Attachments/HOYG-08.jpg" alt="Norway" style="width:100%">
+                    <div class="container">
+                        <p>Our Canteen </p>
+                    </div>
+                </div>
+
+
+
+                <div class="polaroid">
+                        <img src="http://www.webdunia.net/Attachments/CGAF-07.jpg" alt="Norway" style="width:100%">
+                        <div class="container">
+                            <p>Festivals</p>
+                        </div>
+                    </div>
+    
+                    <div class="polaroid">
+                        <img src="http://www.webdunia.net/Attachments/WCIC-01.jpg" alt="Norway" style="width:100%">
+                        <div class="container">
+                            <p>Birthdays</p>
+                        </div>
+                    </div>
+    
+                    <div class="polaroid">
+                        <img src="http://www.webdunia.net/Attachments/KZWH-05.jpg" alt="Norway" style="width:100%">
+                        <div class="container">
+                            <p>CSR Activities </p>
+                        </div>
+                    </div>
+    
+    
+    
+
+
+
+
+
+
+
+            </div>
+        </section>
+        <section id="carrer" class="Page">
+            <h1>Carrer</h1>
+            <div id="displayContent">
+                <p>Webdunia offers a growing career with global experience to best business practices and a chance to be at the forefront of cutting-edge technologies and language services. Come and experience the vibrancy, open door approach where talent, performance and dedication define your career in line with the organization goal.</p>
+                  
+                <span class="hbut">
+                        <button>Search</button>
+                    </span>
+                    <span class="hbut">
+                            <button onclick="document.location.href='#register'">Login/Register</button>
+                </span>
+            </div>
+            
+        </section>
+        <section id="register" class="Page">
+            <h1>Register Here</h1>
+
+            <div class="form">
+                <div class="formHead">Register Form</div>
+                <div class="formContent">
+                        <input type="text" id="fname" placeholder="First Name" class="InputF L2">
+                        <input type="text" id="lname" placeholder="Last Name" class="InputF L2">
+                        <br>
+                        <input type="text" id="lname" placeholder="Company" class="InputF L1">
+                        <br>
+                        <input type="email" id="lname" placeholder="Email ID" class="InputF L1">
+                        <br>
+                        <input type="number" id="lname" placeholder="Phone-Area Code" class="InputF L2">
+                        <input type="number" id="lname" placeholder="Phone Number" class="InputF L2">
+                        <br>
+                        Experience Level
+                        <select name="Experience level" id="ex" class="InputF L2">
+                            <option value="0">Fresher</option>
+                            <option value="1">Less than five</option>
+                            <option value="5">More than five</option>
+                        </select>
+                        <br>
+
+                        <input type="password" name="pass" id="pass" placeholder="Create Password" class="InputF L1"><br>
+                        <input type="password" name="cpass" id="cpass" placeholder="Re-Enter Password" class="InputF L1">
+
+                        <br>
+
+                        <input type="submit" value="Register Me" class="RL">
+
+                </div>
+            </div>
+
+        </section>
+        <section id="login" class="Page">
+            <h1>Login Form</h1>
+            <div class="form">
+                    <div class="formHead">Login Form</div>
+                    <div class="formContent">
+                            <input type="email" id="lname" placeholder="Email ID" class="InputF L1">
+                            <br>
+                            <input type="password" name="pass" id="pass" placeholder="Create Password" class="InputF L1"><br>
+                        <input type="password" name="cpass" id="cpass" placeholder="Re-Enter Password" class="InputF L1">
+
+                        <br>
+
+                        <input type="submit" value="Login" class="RL">
+                    </div>
+                </div>
+        </section>
+    </section>
+    <footer>Footer
+        <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn4.iconfinder.com%2Fdata%2Ficons%2Fsocial-messaging-ui-color-shapes-2-free%2F128%2Fsocial-instagram-new-circle-512.png&imgrefurl=https%3A%2F%2Fwww.iconfinder.com%2Ficons%2F1164349%2Fcircle_instagram_logo_media_network_new_social_icon&docid=KyeotwmLg-cI_M&tbnid=hD3S_V6jPnE3EM%3A&vet=10ahUKEwjQ5sv8gIHjAhVMsY8KHWWSDEUQMwhmKAAwAA..i&w=512&h=512&bih=657&biw=1366&q=social%20media%20icon%20png&ved=0ahUKEwjQ5sv8gIHjAhVMsY8KHWWSDEUQMwhmKAAwAA&iact=mrc&uact=8" alt="aaa">
+    </footer>
+</body>
+
+</html>
