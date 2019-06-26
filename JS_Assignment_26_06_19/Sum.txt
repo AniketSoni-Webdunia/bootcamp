@@ -1,0 +1,33 @@
+//Create a program to ask the user for a number 5 times. Add the number to the already entered number. Display the result after the user has entered all the numbers. If the user enters a string, quit program after displaying the error.
+
+
+let sum=0;
+
+function AskForNumber(n){
+    if(n==0)
+       return 1;
+    else{
+       let num = +prompt("Enter a number","");
+       try{
+       if(isNaN(num)){
+           throw new Error("Invalid Input");
+          }
+       sum+=num;   
+       AskForNumber(n-1);
+       }catch(e){
+            alert(e);
+            
+       }
+    }   
+}
+
+
+function GetSum(){
+AskForNumber(5);
+alert(sum)
+}
+
+//Usage
+GetSum();
+
+//https://jsfiddle.net/8025Lk6j/1/
