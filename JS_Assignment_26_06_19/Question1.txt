@@ -1,0 +1,18 @@
+function Question1(){
+var StringINP  = prompt("Enter Any String :","apple"); 
+     var charArr = StringINP.trim().split('');
+     charArr.sort();
+     let Result = charArr.join();
+     alert(Result)
+
+}
+
+Question1();
+
+
+//https://jsfiddle.net/j183tqv7/9/
+
+
+
+
+

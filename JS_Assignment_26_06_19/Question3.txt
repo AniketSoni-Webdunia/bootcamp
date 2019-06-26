@@ -1,0 +1,40 @@
+//https://jsfiddle.net/4qzru2kg/8/
+
+
+function Question3(){
+
+  var today = new Date();
+  var dd = today.getDate();
+  if(dd<10)
+    dd = '0' + dd;
+  
+
+  var mm = today.getMonth()+1; 
+  if(mm<10)
+    mm = '0' + mm;
+  var yyyy = today.getFullYear();
+  
+  
+  
+  let format1 =dd+"-"+mm+"-"+yyyy;
+  let format2 =dd+"/"+mm+"/"+yyyy;
+  let format3 =mm+"/"+dd+"/"+yyyy;
+  let format4 =mm+"-"+dd+"-"+yyyy;
+  
+  console.log(format1);
+  console.log(format2);
+  console.log(format3);
+  console.log(format4);
+
+
+
+
+}
+
+Question3();
+
+
+
+
+
+

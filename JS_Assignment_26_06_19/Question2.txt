@@ -1,0 +1,22 @@
+function Question2(){
+   let Input = prompt("Enter Any String","");
+   var WordArr = Input.trim().split(' ');
+   max=WordArr[0];
+   console.log("max initial:"+max)
+   WordArr.forEach(word=>{
+      if(word.length > max.length){
+          max=word;}
+   })
+   
+   
+   return max;
+}
+
+
+alert(Question2());
+
+
+//https://jsfiddle.net/pxsvygLb/6/
+
+
+

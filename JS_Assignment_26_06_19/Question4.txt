@@ -1,0 +1,14 @@
+function Question4(){
+for(let year=2000;year<=2050;year++)
+{
+	var date= new Date(year, 0, 1);
+ if(date.getDay()==0)
+ {
+  alert("Sundays "+year);
+ }
+}
+}
+
+Question4();
+
+//https://jsfiddle.net/opq610ne/

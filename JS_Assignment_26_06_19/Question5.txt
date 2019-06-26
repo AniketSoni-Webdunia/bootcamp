@@ -1,0 +1,18 @@
+function Question5(){
+  var date2 = new Date();
+var date1 = new Date(2019,11,25);
+var timeDiff = Math.abs(date2.getTime() - date1.getTime());
+
+let oneday=(1000 * 3600 * 24);
+let dayDifference = Math.ceil(timeDiff / oneday);
+alert(dayDifference);
+   
+   
+
+
+}
+
+Question5();
+
+
+//https://jsfiddle.net/8025Lk6j/6/

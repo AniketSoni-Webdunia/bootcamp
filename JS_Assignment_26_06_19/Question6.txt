@@ -1,0 +1,12 @@
+function remove_character(str, position) 
+ {
+  part1 = str.substring(0, position);
+  part2 = str.substring(position + 1, str.length);
+  return (part1 + part2);
+ }
+ 
+ console.log(remove_character("javascript",0))
+ console.log(remove_character("javascript",5))
+ console.log(remove_character("javascript",6))
+ 
+ //https://jsfiddle.net/0xvtm1e2/5/
