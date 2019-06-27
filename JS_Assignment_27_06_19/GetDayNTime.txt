@@ -1,0 +1,34 @@
+
+function GetDayNTime(){
+
+var dayArray=["Sunday","Mnday","Tuesday","Wednesday","Thrusday","Friday","Saturday"];
+
+var current_date = new Date();
+
+dv = current_date.getDay();
+
+console.log("Today is " + dayArray[dv]);
+
+
+//time
+
+
+var h= current_date.getHours();
+var m= current_date.getMinutes();
+var s= current_date.getSeconds();
+var ap="AM"
+
+if(h>12){
+   h=h-12;
+   ap="PM"
+}
+console.log(h+""+ap+" : "+m+" "+s);
+
+}
+
+GetDayNTime();
+
+//https://jsfiddle.net/3wz6147s/2/
+
+
+

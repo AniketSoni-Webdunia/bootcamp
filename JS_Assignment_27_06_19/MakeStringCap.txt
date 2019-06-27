@@ -1,0 +1,21 @@
+//usage
+var input  =  prompt("Enter String");
+MakeCap(input);
+
+function MakeCap(input){
+   let words = input.split(" ");
+
+for(let i=0;i<words.length;i++){
+   words[i]=words[i].charAt(0).toUpperCase()+words[i].slice(1);
+}
+
+result=""
+words.forEach(word=>{
+  result+=word+" ";
+})
+console.log(result);
+}
+
+
+//link
+//https://jsfiddle.net/2rhvog6u/1/

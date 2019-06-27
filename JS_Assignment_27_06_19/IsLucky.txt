@@ -1,0 +1,30 @@
+function isLuckyWrapper(){
+let input= +prompt("Enter no between 1 to 10");
+ isLucky(input);
+}
+
+
+function isLucky(input){
+let random =Math.floor(Math.random()*10) +1;
+let inp = Math.floor(input)
+if(inp<=10 && inp>=1){
+   if(inp==random){
+      console.log("Good Work")
+   }else{
+      console.log("Not Matched")
+   }
+}else{
+   alert("invalid No");
+}
+}
+
+
+//usage
+isLuckyWrapper();
+
+//link
+//https://jsfiddle.net/x37wtc6s/4/
+
+
+
+
