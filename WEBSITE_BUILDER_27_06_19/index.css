@@ -1,0 +1,43 @@
+#main-window{
+    border:1px solid lightgray;
+    height:600px;
+    padding: 0px;
+    
+}
+
+#palatte{
+    color: white;
+    
+}
+
+#main-window{
+    overflow-y: auto;
+}
+
+.column{
+    /* border:1px solid gray; */
+    height:100px;
+    padding:7px;
+    border-radius: 7px;
+    background:rgb(211, 211, 211);
+    margin:5px;
+    
+}
+
+
+.AppBody{
+    margin-top:55px;
+}
+
+body{
+    overflow: hidden;
+}
+
+.pBtn{
+    border:1px solid white;
+}
+
+.pBtn:hover{
+    background:darkslategray;
+    border:1px solid white;
+}
