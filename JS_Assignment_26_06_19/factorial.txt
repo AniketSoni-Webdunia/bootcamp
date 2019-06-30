@@ -1,33 +1,4 @@
-//Question:Create a program to ask the user for a number between 5 nad 10 Calculate its factorial by using recursion. If the validation criteria is not met, quit program after displaying the error.
 
-function AskForFact(){
-
-  x=prompt("Enter no between 5 and 10 ?",6);
-  try{
-  if(x >5 && x<10){
-       alert("Result:"+fact(x))
-  }else{
-    let customerr= new Error("Validation Error: Input is invalid please try again with no. b/w 5 and 10 ")
-    throw customerr;
-  }
-  }catch(customerr){
-     alert(customerr.message);
-  }
-  
-
-}
-
-function fact(x) {
-if (x == 1) {
-return 1;
-} else {
-return x * fact(x-1);
-}
-}
- 
-
- //usage
- AskForFact();
  
  
  ////Question:Create a program to ask the user for a number between 5 nad 10 Calculate its factorial by using recursion. If the validation criteria is not met, quit program after displaying the error.

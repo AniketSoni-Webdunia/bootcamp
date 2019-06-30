@@ -1,0 +1,17 @@
+function WaitingChrismas(){
+  var today = new Date();
+var chrismasDate = new Date(2019,11,25);
+var timeDiff = Math.abs(today.getTime() - chrismasDate.getTime());
+
+let oneday=(1000 * 3600 * 24);
+let dayDifference = Math.ceil(timeDiff / oneday);
+console.log("No.of Days remaining for CHRISMAS:"+dayDifference+" days");
+   
+   
+
+
+}
+
+WaitingChrismas();
+
+//https://jsfiddle.net/w3e9uL50/11/
