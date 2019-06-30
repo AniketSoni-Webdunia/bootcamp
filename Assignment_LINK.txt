@@ -10,15 +10,15 @@ Date:20/06/19 : JSAssigment
 
 Date:26/06/19 : JSAssigment(Practical Session)
     1.Question1       : https://jsfiddle.net/j183tqv7/9/
-    2.Question1       : https://jsfiddle.net/pxsvygLb/6/
-    3.Question1       : https://jsfiddle.net/4qzru2kg/8/
-    4.Question1       : https://jsfiddle.net/opq610ne/
-    5.Question1       : https://jsfiddle.net/8025Lk6j/6/
-    6.Question1       : https://jsfiddle.net/0xvtm1e2/5/
+    2.Question2       : https://jsfiddle.net/pxsvygLb/6/
+    3.Question3       : https://jsfiddle.net/4qzru2kg/8/
+    4.Question4       : https://jsfiddle.net/opq610ne/
+    5.Question5       : https://jsfiddle.net/8025Lk6j/6/
+    6.Question6       : https://jsfiddle.net/0xvtm1e2/5/
     7.factorial       : https://jsfiddle.net/gxneswLu/2/
 
 Date:27/06/19 : JSAssigment
-    1.GetDayNTime     : https://jsfiddle.net/3wz6147s/2/
+    1.GetDayNTime     : https://jsfiddle.net/95e3jznt/1/
     2.IsLeapYear      : https://jsfiddle.net/uozhw70q/
     3.IsLucky         : https://jsfiddle.net/x37wtc6s/4/
     4.MakeStringCap   : https://jsfiddle.net/2rhvog6u/1/

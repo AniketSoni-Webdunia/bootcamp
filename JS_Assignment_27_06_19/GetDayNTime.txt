@@ -18,7 +18,7 @@ var m= current_date.getMinutes();
 var s= current_date.getSeconds();
 var ap="AM"
 
-if(h>12){
+if(h>=12){
    h=h-12;
    ap="PM"
 }
@@ -28,7 +28,7 @@ console.log(h+""+ap+" : "+m+" "+s);
 
 GetDayNTime();
 
-//https://jsfiddle.net/3wz6147s/2/
+//https://jsfiddle.net/95e3jznt/1/
 
 
 
