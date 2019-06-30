@@ -5,8 +5,12 @@ function getCol(size){
         size="-"+size
     }
     let str;
-    str='<div class="col-md'+size+' column" >  </div>';
+    str='<div class="col-md'+size+' column" id="'+generateId("grid")+'" onclick="showProperties(this.id)">  </div>';
     return str;
+}
+
+function generateId(str){
+    return str+"_"+Math.random().toString(36).substr(2,9);
 }
 
 
@@ -47,5 +51,53 @@ function webLayout(str){
 
     }
      
+}
+
+function showProperties(id){
+    let propwindow = document.querySelector("#proppalatte");
+    console.log(propwindow)
+    let element=document.querySelector("#"+id);
+    let s = getComputedStyle(element);
+     
+    let properties = `<div class="row mt-1">
+    <div class="col-md-5 smtxt">
+      `+"Background Color"+`
+    </div>
+    <div class="col-md-5 smtxt">
+        `+s.backgroundColor+`
+      </div>
+  </div>
+  <div class="row mt-1">
+  <div class="col-md-5 smtxt">
+    `+"Width"+`
+  </div>
+  <div class="col-md-5 smtxt">
+      `+s.width+`
+    </div>
+</div>
+<div class="row mt-1">
+  <div class="col-md-5 smtxt">
+    `+"Height"+`
+  </div>
+  <div class="col-md-5 smtxt">
+      `+s.height+`
+    </div>
+</div>
+<div class="row mt-1">
+  <div class="col-md-5 smtxt">
+    `+"Border radius"+`
+  </div>
+  <div class="col-md-5 smtxt">
+      `+s.borderRadius+`
+    </div>
+</div> 
+`;
+    // propwindow.innerHTML="<p>"+id+"</p>";
+    propwindow.innerHTML=properties;
+    console.log(s.backgroundColor)
+    console.log(s.height)
+
+  
+    
 }
 

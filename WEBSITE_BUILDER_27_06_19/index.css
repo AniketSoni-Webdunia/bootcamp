@@ -7,11 +7,22 @@
 
 #palatte{
     color: white;
+ 
     
 }
 
-#main-window{
+#palatteitems,#proppalatte{
+    
+    min-height:280px;
+}
+
+#main-window,#palatteitems{
     overflow-y: auto;
+}
+
+.smtxt{
+    font-size:12px;
+    
 }
 
 .column{
@@ -40,4 +51,10 @@ body{
 .pBtn:hover{
     background:darkslategray;
     border:1px solid white;
+}
+
+.palatte-heading{
+    width:100%;
+    text-align: center;
+    background: rgb(141, 141, 141);
 }
