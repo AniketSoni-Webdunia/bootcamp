@@ -22,7 +22,7 @@
 
 .smtxt{
     font-size:12px;
-    
+
 }
 
 .column{
@@ -33,6 +33,10 @@
     background:rgb(211, 211, 211);
     margin:5px;
     
+}
+
+.column:hover{
+    background: rgb(175, 175, 175)
 }
 
 
