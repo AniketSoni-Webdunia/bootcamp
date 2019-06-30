@@ -62,3 +62,7 @@ body{
     text-align: center;
     background: rgb(141, 141, 141);
 }
+
+.selected-element{
+    background:  rgb(175, 175, 175);
+}

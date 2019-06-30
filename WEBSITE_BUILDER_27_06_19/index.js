@@ -1,3 +1,5 @@
+var selectID = "";
+
 function getCol(size){
     if(size==0){
         size="";
@@ -54,9 +56,11 @@ function webLayout(str){
 }
 
 function showProperties(id){
+
     let propwindow = document.querySelector("#proppalatte");
     console.log(propwindow)
     let element=document.querySelector("#"+id);
+    selected(id);
     let s = getComputedStyle(element);
      
     let properties = `<div class="row mt-1">
@@ -99,5 +103,15 @@ function showProperties(id){
 
   
     
+}
+
+function selected(id){
+    if(selectID != ""){
+       let old=document.querySelector("#"+selectID);
+       old.classList.remove("selected-element");       
+    }
+    selectID=id;
+    let newS=document.querySelector("#"+selectID);
+    newS.classList.add("selected-element");
 }
 
