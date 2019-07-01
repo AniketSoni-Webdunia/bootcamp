@@ -24,6 +24,11 @@ Date:27/06/19 : JSAssigment
     4.MakeStringCap   : https://jsfiddle.net/2rhvog6u/1/
     5.WaitingChrismas : https://jsfiddle.net/w3e9uL50/11/
 
+Date:01/07/19 : JSAssigment(Practical Session)
+    1.Question1       : https://jsfiddle.net/n0rfqybp/3/
+    2.Question2       : https://jsfiddle.net/rv2g75c1/2/
+    3.Question3       : https://jsfiddle.net/46jc0xgu/3/
+
 ___________________________________________________________________________________________________
 
 SOME OTHER TASKS : Kindly check repository's files for the same.

@@ -1,0 +1,44 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="tf">
+     <button onclick="changecolor()">click</button>
+     <div>
+    <div id="div1" onclick="changecolor2()" style="width:100px;height:100px;border:1px solid black;float:left"></div>
+    <div id="div2"  style="width:100px;height:100px ;border:1px solid black;float:left"></div>
+</div> 
+
+
+    <script>
+            function changecolor(){
+                let c= document.getElementById("tf").value;
+                
+                document.getElementById("div1").style.backgroundColor=c;
+            }
+      
+   function changecolor2(){
+       
+       let ele_div1 = document.getElementById("div1");
+       let css_div1 = getComputedStyle(ele_div1);
+       
+       document.getElementById("div2").style.backgroundColor=css_div1.backgroundColor;
+
+       
+   }
+
+   //https://jsfiddle.net/n0rfqybp/3/
+
+</script>
+
+</body>
+</html>
+
