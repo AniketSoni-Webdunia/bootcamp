@@ -1,5 +1,6 @@
 
 
+
 function SearchRegex(){
    let  reg =document.getElementById("regexString").value;
    
@@ -19,6 +20,7 @@ function SearchRegex(){
   });
 
    }
+
 
 
 
