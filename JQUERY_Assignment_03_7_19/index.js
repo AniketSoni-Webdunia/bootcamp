@@ -1,31 +1,15 @@
 var studentInfo = [
-    {
-        id: 1,
-        name: "Aniket Soni",
-        subject: "Java",
-        marks: 88
-    },
-    {
-        id: 2,
-        name: "Ojas Sharma",
-        subject: "C#",
-        marks: 56
-    },
-    {
-        id: 3,
-        name: "Manali",
-        subject: "Java",
-        marks: 80
-    },
-    {
-        id: 4,
-        name: "Garima K",
-        subject: "PHP",
-        marks: 90
-    }
+   
 ];
 
+
+let options=[]
+
+
 function postScript() {
+
+    renderOptions();
+
     $("#table_body").html("");
     studentInfo.forEach(student => {
         var TR = document.createElement("tr");
@@ -37,19 +21,38 @@ function postScript() {
             student.subject +
             "</td><td>" +
             student.marks +
-            '</td><td><button class="btn btn-danger" onclick="deleteStudent('+student.id+')"'+ 
+            '</td><td><button class="btn btn-danger" onclick="deleteStudent('+student.id+',this)"'+ 
             student.id +
             ">Delete</button></td>";
 
         $("#table_body").append(TR);
+
+        
+       
+
     });
 
+     //options
+  
     $("#table_body").each(function () {
         $(this)
             .find("tr:even")
             .css("background-color", "gray");
     });
     $("#record").text(studentInfo.length);
+}
+
+function renderOptions(){
+    document.getElementById('filterSubject').innerHTML="";
+    document.getElementById('filterSubject').innerHTML='<option value="" selected>Filter by Subject:All</option>';
+        
+    options.forEach(sub => {
+       let newsubjectoption = document.createElement("option");
+       $(newsubjectoption).attr("value",sub);
+       $(newsubjectoption).text(sub);
+       $('#filterSubject').append(newsubjectoption)
+    });
+
 }
 
 $(document).ready(function () {
@@ -129,6 +132,20 @@ $(document).ready(function () {
             marks: $("#inputMarks").val()
         };
         studentInfo.push(student);
+
+        let newSubject=true;
+         options.forEach(sub => {
+             if(sub.toLowerCase() == subject.toLowerCase()){
+                  console.log(sub+":"+subject)
+                  newSubject=false;
+             }
+         });
+         console.log(newSubject)
+         if(newSubject){
+             options.push(subject);  
+         }
+      
+
         postScript();
         $("#inputName").val("");
         $("#inputSubject").val("");
@@ -137,52 +154,58 @@ $(document).ready(function () {
     }else{
         alert("First fill All Value");
     }
+        
     });
 
-    // $("#deleteStudentBtn").on('click',function(){
-    //     console.log("Deleting Student : ");
-    //     let id =$(this).closest('tr').attr("id")
-    //     console.log(id);
-    
-    //     studentInfo = $.grep(studentInfo, function (e) {
-    //         return e.id != id;
-    //     });
-    
-    //     postScript();
-    
-    
-    
-        
-    // })
 
+
+
+    
+
+    
+    
 
    
 });
 
 
-function deleteStudent(id) {
+function deleteStudent(id,obj) {
+
+   
+
     console.log("Deleting Student : ");
     console.log(id);
+
+    let sub=""
+    studentInfo.forEach(student => {
+         if(student.id == id){
+             sub = student.subject;
+         }
+    });
+    let count=0;
+    studentInfo.forEach(student => {
+        if(student.subject == sub ){
+            count++;
+        }
+   });
+   
+   options = $.grep(options, function (e) {
+    return e != sub;
+});
+   
 
     studentInfo = $.grep(studentInfo, function (e) {
         return e.id != id;
     });
 
-    postScript();   
+    
+     
+
+    postScript(); 
+    
+     
 }
 
 
-// function addStudent() {
-//     console.log();
-//     var student = {
-//         id: studentInfo.length + 1,
-//         name: $("#inputName").val(),
-//         subject: $("#inputSubject").val(),
-//         marks: $("#inputMarks").val()
-//     };
-//     studentInfo.push(student);
-//     postScript();
-//     $("#inputName").val("");
-//     $("#inputSubject").val("");
-//     $("#inputMarks").val("");
-// }
+
+

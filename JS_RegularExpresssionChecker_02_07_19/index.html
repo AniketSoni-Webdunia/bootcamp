@@ -27,9 +27,37 @@
       crossorigin="anonymous"
     ></script>
 
+    <script src="jquery.highlighttextarea.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.js"></script>
+
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight-within-textarea@2.0.5/jquery.highlight-within-textarea.css">
     <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/highlight-within-textarea@2.0.5/jquery.highlight-within-textarea.js"></script>
     
     <title>Document</title>
+    <style>
+    
+      mark{
+    background: rgb(151, 194, 194);
+    color: black;
+}
+
+.hwt-content,#inputString {
+  width: 1300px;
+  height: 225px;
+  padding: 10px;
+  margin:20px;
+  margin-right:20px;
+  border: 1px solid rgb(213, 243, 41);
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: rgb(217, 240, 114)
+
+}
+
+    
+    </style>
   </head>
   <body>
 
@@ -41,16 +69,15 @@
                  <div class="col-md">
 
                         <div class="input-group mb-3">
-                                <input type="text" id="regexString" class="form-control" placeholder="Type your Regular Expersion here" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <input type="text" id="regexString"  onkeyup="SearchRegex()" class="form-control" placeholder="Type your Regular Expersion here" aria-label="Recipient's username" aria-describedby="basic-addon2">
                                 <div class="input-group-append">
                                   <button class="input-group-text" onclick="SearchRegex()" id="basic-addon2">GO</button>
                                 </div>
                         </div>
 
-                        <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Your String</label>
-                                <textarea class="form-control" id="inputString" rows="3"></textarea>
-                              </div>
+                        
+                                <textarea  id="inputString"  rows="3"></textarea>
+                              
 
                  </div>
              </div>
