@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+  </head>
+  <body >
+    <!--  NAVBAR   -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">JQUERY ASSIGNMENT</a>
+     
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item mr-3">
+            <select class="custom-select custom-select-sm mt-1  " id="filterSubject">
+                <option value="" selected>Filter by Subject:All</option>
+                <option value="Java">Java</option>
+                <option value="C#">C#</option>
+                <option value="PHP">PHP</option>
+              </select>
+          </li>
+          <li class="nav-item mr-3">
+            <button class="btn btn-sm mt-1 btn-primary" id="sortnamebtn">Sort By name</button>
+          </li>
+          <li class="nav-item mr-3">
+            <button class="btn btn-sm mt-1 btn-primary" id="sortmarksbtn">Sort By Marks</button>
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+
+    
+
+
+   
+
+
+    <!-- Main Body -->
+
+    <div class="jumbotron container ">
+        
+        <!-- Image and text -->
+<nav class="pt-2 pb-2 navbar-dark bg-primary  ">
+    <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <input type="text" class="form-control studentEntry" id="inputName" placeholder="Enter Name">
+          </div>
+          <div class="col-sm">
+            <input type="text" class="form-control studentEntry" id="inputSubject" placeholder="Enter Subject">
+          </div>
+          <div class="col-sm">
+            <input type="text" class="form-control studentEntry" id="inputMarks" placeholder="Enter Marks">
+          </div>
+          <div class="col-sm">
+            <button class="btn btn-success" id="addStudentBtn"  >Add Student</button>
+          </div>
+        </div>
+      </div>
+  </nav>
+
+        <table class="table  table-dark  mt-3 " id="student_table" >
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Subject</th>
+                <th scope="col">Marks</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody id="table_body">
+              
+            </tbody>
+          </table>
+          
+          <p>Total no of Records: <b id="record"><b>  </p>
+
+    </div>
+
+    
+
+    
+
+  </body>
+</html>
