@@ -39,6 +39,7 @@ SOME OTHER TASKS : Kindly check repository's files for the same.
     5.CALCULATOR(28-06-19)      : STANDARD windows calculator clone by html,css & js
     6.RegexExpressionChecker    : Regular Expression based Application.
     7.JQuery_Assignment_03_07_19: CURD App with jquery
+    8.JQUERY_AJAX_04_07_19      : AJAX Search Field App
     
     
 

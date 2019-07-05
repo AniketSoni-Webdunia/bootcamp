@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+   
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+    <title>AJAX Assigment</title>
+</head>
+<body>
+    
+        <!-- As a link -->
+<nav class="navbar navbar-dark bg-primary fixed-top">
+        <a class="navbar-brand" href="#">JQuery(Ajax) Assignment-2</a>
+      </nav>
+    <div class="container mt-5 pt-5">
+
+        
+        <input type="text" class="form-control" id="search" aria-describedby="emailHelp" placeholder="Search For People">
+        
+
+        <ul class="list-group " id="list">
+
+        </ul>
+
+      </div>
+
+
+
+</body>
+<script>
+
+$(document).ready(function(){
+
+  $("#search").on('keyup',()=>{
+    $.getJSON('people.json', function(data) {
+     console.log(data);
+     $("#list").html("");//clearing list before re-entering value
+     var searchField = $("#search").val(); // taking value for seach box
+     var regex = new RegExp(searchField, "i"); // make as regular expresion for search
+     $.each(data, function(key, value) {
+         //filter values ->
+          if ( 
+            value.Name.search(regex) != -1 ||
+            value.City.search(regex) != -1 ||
+            value.Country.search(regex) != -1
+          ) {
+              //append filtered list in specified format Name | City | Country
+            $("#list").append(
+              '<li onclick="getInfo('+value.id+')" id='+value.id+' class="list-group-item link-class">' +
+                value.Name +
+                ' | <span class="text-muted">' +
+                value.City +
+                "</span>"+
+                ' | <span class="text-muted">' +
+                value.Country +
+                "</span></li>"
+            );
+          }
+        });   
+  });
+  })  
+
+
+  
+
+});
+
+
+
+</script>
+</html>
