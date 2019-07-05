@@ -37,6 +37,9 @@ SOME OTHER TASKS : Kindly check repository's files for the same.
     3.CSS_ASSIGMENT(24-06-19)   : Website via Bootstrap framework
     4.WEBSITE_BUILDER(27-06-19) : DOM MANUPULATION (adding row and column structure by js)
     5.CALCULATOR(28-06-19)      : STANDARD windows calculator clone by html,css & js
+    6.RegexExpressionChecker    : Regular Expression based Application.
+    7.JQuery_Assignment_03_07_19: CURD App with jquery
+    
     
 
 
