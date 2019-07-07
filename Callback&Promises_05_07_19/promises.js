@@ -1,4 +1,4 @@
-//link : https://jsfiddle.net/6ofLseya/2/
+//link : https://jsfiddle.net/r4wt3y8f/1/
 
 var login = (username,password)=>{
     return new Promise((resolve,reject)=>{
@@ -61,7 +61,7 @@ var getProfileDetails=(token)=>{
 
 login("aniket","ani") // login request(1)
 .then(data=>getProfileDetails(data.token)) // if request(1) resolve make request(2)
-.then(data=>console.log("hi,"+data.Fullname +2)) // if request(2) resolve print data
+.then(data=>console.log("hi,"+data.Fullname)) // if request(2) resolve print data
 .catch(error=>{
     if(error.errorCode==404){
        return ForgettenPassword(error).then(data=>console.log(data)).catch(error=>console.log(error))
