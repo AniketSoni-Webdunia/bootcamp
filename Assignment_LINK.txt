@@ -32,7 +32,7 @@ Date:01/07/19 : JSAssigment(Practical Session)
 
 Date:05/07/19 : CallBacks And Promises:
     1.Callback task   : https://jsfiddle.net/yx5g1vLc/2/
-    2.Promises task   : https://jsfiddle.net/za7L0ox5/5/
+    2.Promises task   : https://jsfiddle.net/st9gcve7/
 
 ___________________________________________________________________________________________________
 
