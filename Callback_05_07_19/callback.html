@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <title>Callback Task</title>
+    <style>
+        #callBackForm {
+            border: 1px solid rgb(28, 136, 69);
+            width: 230px;
+            padding: 40px;
+        }
+
+        #tb1,
+        #tb2,
+        #tb3,
+        #tb4 {
+            border: 1px solid black;
+            width: 200px;
+            height: 20px;
+            border-radius: 5px;
+        }
+
+        #DoThings {
+            width: 200px;
+        }
+
+        #header {
+            width: 280px;
+            height: 40px;
+            background: rgb(28, 136, 69);
+            padding-top: 15px;
+            color: white;
+            font-size: 20px;
+            padding-left: 32px;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div id="header">CALLBACK ASSIGNMENT</div>
+
+    <form action="" id="callBackForm">
+
+        <input type="text" id="tb1"><br><br>
+        <input type="text" id="tb2"><br><br>
+        <input type="text" id="tb3"><br><br>
+        <input type="text" id="tb4"><br><br>
+
+        <input type="radio" name="color" id="r" value="red">RED</input>
+        <input type="radio" name="color" id="b" value="blue">BLUE</input>
+        <input type="radio" name="color" id="g" value="green">GREEN</input><br>
+        <br> <button id="DoThings">Click Me</button>
+    </form>
+</body>
+
+<script>
+    var color;
+    $(document).ready(function () {
+        $("#DoThings").click(function (e) {
+            console.log("ButtonClicked");
+            e.preventDefault();
+            // $("#tb1").slideToggle(200, function(){
+            // // Code to be executed once effect is complete
+            // console.log("toggled");
+            // });
+
+            color = $("input[name='color']:checked").val();
+            $("input[type='text']").css("background", color);
+
+        });
+
+        $("input[name='color']").on("change", () => {
+            color = $("input[name='color']:checked").val();
+            $('input[type="text"]').show();
+            if (color == "red") {
+                $("#tb1").fadeOut(1, function () {
+                    $("#tb1").fadeIn(1000, function () {
+                        // textbox1 wil fadeIn
+                        $("input[type='text']").css("background", color);
+                    });
+                });
+
+            }
+            if (color == "green") {
+                $("#DoThings").slideToggle("slow", function () {
+                    // Code to be executed once effect is complete
+                    $("input[type='text']").css("background", color);
+                });
+
+            }
+            if (color == "blue") {
+                $("#tb1,#tb2").hide(function () {
+                    // Code to be executed once effect is complete
+                    $("input[type='text']").css("background", color);
+                });
+
+            }
+        });
+
+
+    });
+
+
+
+
+
+
+</script>
+
+</html>
+
+
+
+<!-- JSFIDDLE LINK
+https://jsfiddle.net/yx5g1vLc/2/ -->

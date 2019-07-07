@@ -29,6 +29,10 @@ Date:01/07/19 : JSAssigment(Practical Session)
     2.Question2       : https://jsfiddle.net/rv2g75c1/2/
     3.Question3       : https://jsfiddle.net/46jc0xgu/3/
 
+Date:05/07/19 : CallBacks And Promises:
+    1.Callback task   : https://jsfiddle.net/yx5g1vLc/2/
+    
+
 ___________________________________________________________________________________________________
 
 SOME OTHER TASKS : Kindly check repository's files for the same.
@@ -46,5 +50,6 @@ SOME OTHER TASKS : Kindly check repository's files for the same.
 
 
 NOTE : IF JsFiddle LINK IS NOT WORKING PROPERLY . KINDLY CHECK REPOSITORY's FILES
+       SOME OF THE PROJECT USES CDN LINK KINDLY USE ACTIVE INTERNET CONNECTION 
 
  
