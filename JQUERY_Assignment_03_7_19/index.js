@@ -144,9 +144,15 @@ $(document).ready(function () {
          if(newSubject){
              options.push(subject);  
          }
-      
+         
+        postScript(); 
+         $("#table_body tr:last-child").hide(0,()=>{
+            $("#table_body tr:last-child").show("slow",()=>{
+                console.log("completed");
+            })
+         })
 
-        postScript();
+        
         $("#inputName").val("");
         $("#inputSubject").val("");
         $("#inputMarks").val("");
@@ -198,10 +204,15 @@ function deleteStudent(id,obj) {
         return e.id != id;
     });
 
-    
+    // let tr=;
+    // console.log(tr);
+
+    $(obj).parent().parent().fadeOut(400,()=>{
+        postScript(); 
+    });
      
 
-    postScript(); 
+    
     
      
 }

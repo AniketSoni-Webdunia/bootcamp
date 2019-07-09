@@ -57,7 +57,7 @@ var login = (username,password)=>{
 
 
      async function App(){
-         const loginResult = await login("aniket","ani");
+         const loginResult = await login("anikt","ani");
          const profile= await getProfileDetails(loginResult.token) ;       
          console.log(profile.Fullname);        
      }
@@ -66,9 +66,28 @@ var login = (username,password)=>{
          
          if(err.errorCode==404){
              ForgettenPassword(err)
-                .then(data=>{console.log(data)})
-                .catch(err=>{console.log(err)});
+                .then(console.log)
+                .catch(console.log);
              return;
          }
          console.log(err.message);
      });
+
+//  function TestApp(){
+//          login("aniket","ani").then(data=>getProfileDetails(data.token))
+//                               .then(data=>console.log(data.Fullname))
+//                               .catch(err=>{
+//                                   if(err.errorCode=="404"){
+//                                     ForgettenPassword(err)
+//                                     .then(data=>console.log(data))
+//                                     .catch((err)=>console.log(err))
+//                                   }else{
+//                                       console.log(err.message)
+//                                   }
+
+//                               })
+
+
+//   } 
+
+//     TestApp()
